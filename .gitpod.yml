@@ -1,0 +1,8 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - init: yarn config set yarn-offline-mirror ./node_modules/ && yarn install --ignore-engines && yarn build
+    command: yarn start
+vscode:
+  extensions:
+    - dbaeumer.jshint@0.10.21:j1+d25dshkh6As9dAXw30Q==
